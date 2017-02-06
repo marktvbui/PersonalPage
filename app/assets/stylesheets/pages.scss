@@ -1,6 +1,38 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.progress-bar-aqua {
-  color: aqua;
+.mountainImage {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  -webkit-background-size: cover; 
+  -moz-background-size: cover; 
+  -o-background-size: cover; 
+  background-size: cover;
+}
+
+.skill-title {
+  font-size: 20px;
+}
+
+.skill-score {
+  font-size: 20px;
+  padding-top: 1.5px;
+  padding-bottom: 1.5px;
+}
+
+.blink {
+  font-weight: bold;
+  color: black;
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
